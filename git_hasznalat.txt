@@ -1,0 +1,20 @@
+c:\Users\support\Desktop\SFJ_GIT>ls
+
+git clone https://github.com/torokrgithub/GitTest.git
+
+git status
+
+git pull
+
+git config user.email "torokrgithub@gmail.com"
+
+git config user.name "torokrgithub"
+
+touch red.txt
+
+git commit -m "Commit is on the way"
+
+git push
+
+git log
+
