@@ -18,3 +18,47 @@ git push
 
 git log
 
+különbözet lekérése:
+-elõször le kell húzni mindent
+git pull
+
+git diff HEAD
+
+Az eltérõ fájlokat adja vissza a pull után, ami nálam nem egyezik meg a fent lévõtõl, mert már valaki módosított benne
+
+git diff red.txt
+A konkrét fájl különbségét adja vissza
+
+Ha már feladtam a fájl add -dal,
+akkor a diff símán nem mûködik
+
+git diff --staged
+
+paranccsal tudom ebben az esetben megnézni a különbséget.
+
+git reset red.txt
+
+az add-dal színpadra állított fájlt visszaveszi.
+
+git checkout -- red.txt
+
+Visszaállítja az utolsó commit,push pull állapotot a fájlból.
+
+git branch clean_up
+branch létrehozása
+
+git branch visszadja hol vagyok váltás másikra
+
+git checkout clean_up kilépek a clean_up branchbõl
+
+git rm *.txt az ajtuális branch-bõl törli a txt fájlokat.
+
+ez feldobja a szinpadra commitoláshoz a törlési kéréseket.
+git status -szal lehet lekérdezni ezt az állapotot
+
+a master-en állva
+git merge clean_up
+
+A clean_up branch-et összefésüli a masterrrel.
+
+git branch -d clean_up törli a clean-up branch-et.
